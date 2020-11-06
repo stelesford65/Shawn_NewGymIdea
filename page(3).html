@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Shawn Telesford-->
+<title>Shawn's Work Out Registration Form</title>
+<head>
+<style>
+a{
+font-size: 45px;
+font-family: Copperplate, fantasy;
+font-weight: 1500;
+color: #ff3300;
+text-shadow: 1px 0 black;
+}
+p.links{
+font-size: 29px;
+font-family: Copperplate, fantasy;
+font-weight: 900;
+color: white;
+text-shadow: 1px 0 black
+}
+</style>
+<script src="form_validation.js">
+</script>
+</head>
+
+<body>
+<a name="TOP"></a>
+<p class="links" style="text-align:center; font-size: 100px; color: #ff3300"><b>SHAWN's WORK OUT</b></p>
+<p class="links" style="text-align:center">
+<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="page(2).html">Coaching</a>&nbsp;&nbsp;&nbsp;
+<a style="color: #0099FF"><u>Apply Now!</u></a>
+</p>
+
+<form name= "form" method="post" onSubmit="return validation();">
+<h1>Create Your Account Here: </h1>
+ 
+<fieldset>
+<legend><h2>Contact Information</h2></legend>
+<table border = "1">
+<tr>
+<td>First Name:</td> 
+<td><input type="text" name="first_name" maxlength="10"></td>
+</tr>
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="last_name" maxlength="30"></td>
+</tr>
+<tr>
+<td>Address:</td>
+<td><input type="text" name="address" maxlength="15"></td>
+</tr>
+<tr>
+<td>City:</td>
+<td><input type="text" name="city" maxlength="12"></td>
+</tr>
+<tr>
+<td>State (Just two letters):</td>
+<td><input type="text" name="state" maxlength="2"></td>
+</tr>
+<tr>
+<td>ZIP Code:</td> 
+<td><input type="text" name="zip_code" maxlength="5"></td>
+</tr>
+<tr>
+<td>Phone Number:</td>
+<td><input type="text" name="phone_number" maxlength="10"></td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend><h2>Why Choose Us?</h2></legend>
+<p><input type="checkbox" name="interests">To build my strength.</p>
+<p><input type="checkbox" name="interests">I like your coaching program.</p>
+<p><input type="checkbox" name="interests">To build my stamina.</p>
+</fieldset>
+
+<fieldset>
+<legend><h2>Please Provide Your Email Address and a Password</h2></legend>
+<table border = "1">
+<tr>
+<td>E-Mail:</td> 
+<td><input type="text" name="email" maxlength="30"></td>
+</tr>
+<tr>
+<td>Password:</td> 
+<td><input type="password" name="password" maxlength="10"></td>
+</tr>
+<tr>
+<td>Verify Password:</td>
+<td><input type="password" name="password_verification" maxlength="10"></td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend><h2>How Will You Pay?</h2></legend>
+<p>Card Type: <input type="radio" name="card" value="MasterCard">MasterCard
+<input type="radio" name="card" value="Visa">Visa
+<input type="radio" name="card" value="American Express">American Express
+<input type="radio" name="card" value="Discover">Discover
+</p>
+<table border = "1">
+<tr>
+<td>Card Number:</td> 
+<td><input type="text" name="card_number" maxlength="16"></td>
+</tr>
+<tr>
+<td>Card CVV:</td> 
+<td><input type="text" name="card_CVV" maxlength="3"></td>
+</tr>
+</table>
+<p>Expiration Date: </p>
+<select name="expiration_date">
+<option value="">Please Select Month:</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="19">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<select name="expiration_date1">
+<option value="">Please Select Year:</option>
+<option value="29">29</option>
+<option value="28">28</option>
+<option value="27">27</option>
+<option value="26">26</option>
+<option value="25">25</option>
+<option value="24">24</option>
+<option value="23">23</option>
+<option value="22">22</option>
+<option value="21">21</option>
+<option value="20">20</option>
+<option value="19">19</option>
+<option value="18">18</option>
+<option value="17">17</option>
+<option value="16">16</option>
+</select>
+</fieldset>
+
+
+<fieldset>
+<legend><h2>Select a Payment Plan</h2><legend>
+<p>Payment Plan: 
+<input type="radio" name="plan" value="monthly">$10 Monthly
+<input type="radio" name="plan" value="quarterly">$30 Quarterly
+<input type="radio" name="plan" value="yearly">$120 Yearly
+</p>
+</fieldset>
+<fieldset>
+<legend><h4>Any Comments?</h4></legend><br>
+<textarea wrap="virtual" name="Comments" rows=3 
+cols=20 maxlength=100>
+</textarea><br>
+</fieldset>
+<h1><strong>All Done? Submit Registration Now!</strong></h1>
+<tr>
+<td><input type="submit" name="send" value="Submit Form"></tr>
+<td><input type="reset" name="reset" value="Start Over"></tr>
+</tr>
+</form>
+<hr/>
+<div style="text-align: center">
+<h3 style ="font-size: 20px; color: black; font-family: Times, New Roman;">SHAWN's WORK OUT&#183;Belt Pkwy, Exit 12 &#183;New York, NY 11229 </h5>
+<p style ="font-size: 20px; color: black; font-family: Times, New Roman;"><i>Questions? Contact Shawn Telesford at 1 (718) 555-7723</i></p>
+<a style ="font-size: 20px; color: black; font-family: Times, New Roman;" href="mailto:stelesford64@aol.com"><p style="font-size: 20px">Or email him through stelesford64@aol.com</p></a>
+<p style ="font-size: 20px; color: black; font-family: Times, New Roman;">Hours: Mon-Sat 7AM-9PM</p>
+</div>
+<div style="text-align: center"><p><a style ="font-size: 45px; color: black; font-family: Times, New Roman;" href= "#TOP">Top of Form</a></p></div>
+</body>
+</html>
